@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app, origins="http://localhost:5173")
 
 # Read the CSV and convert the 'Date' column
-df = pd.read_csv("clean_sales.csv")
+df = pd.read_csv("backend/clean_sales.csv")
 df["Date"] = pd.to_datetime(df["Date"])
 
 # Route to load the data to the grid

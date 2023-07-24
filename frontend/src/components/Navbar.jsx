@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Popover, Typography, Box, Avatar } from "@mui/material";
 import axios from "axios";
-import photo from "../assets/cv photo.jpg";
+import photo from "../assets/Photo.jpg";
 import anant from "../assets/anant.png";
 import "../styles/Navbar.css";
 import "../styles/button.scss";

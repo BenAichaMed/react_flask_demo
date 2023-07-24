@@ -1,11 +1,14 @@
 # react_flask_demo
-This is an interview demo
+This repository holds an example of the integration of ReactJS and Flask in the backend
+
 # Getting Started
 To get you started you can simply clone the react_flask_demo repository and install the dependencies:
 
-## Prerequisites
-You need git to clone the angular-seed repository. You can get git from [http://git-scm.com/.](https://git-scm.com/)
-You must have node.js and its package manager (npm) installed. You can get them from [http://nodejs.org/.](http://nodejs.org/.)
+## Pre-requisites
+* You need git to clone the react_flask_demo repository.<br/>
+* Download and Install git from [http://git-scm.com/.](https://git-scm.com/).<br/>
+* You must have node.js and its package manager (npm) installed.<br/>
+* Download and Install NodeJs from [http://nodejs.org/.](http://nodejs.org/.).<br/>
 
 ## Clone react_flask_demo
 Clone the demo using [git](https://git-scm.com/)
@@ -13,26 +16,28 @@ Clone the demo using [git](https://git-scm.com/)
 git clone https://github.com/BenAichaMed/react_flask_demo.git
 ```
 ## Install Dependencies
-We have two kinds of dependencies in this project : flask and react 
+We have two kinds of dependencies in this project : Flask and React 
 
 So in the frontend directory we have to run :
 ```bash
+cd frontend
 npm install
 ```
 and in the backend directory we have to run : 
 ```bash
-pip install
+cd backend
+pip install -r requirements.txt
 ```
 
 ## Run the Application
 
-To run the frontend server simply type :
+To run the frontend server simply run :
 ```bash
 npm run dev
 ```
-To run the backend server we need to go backend/src/main and run:
+To run the backend server run:
 ```bash
-python app.py
+python backend/src/main/app.py
 ```
 Now browse to the app at `http://localhost:5173/`
 
@@ -55,7 +60,7 @@ Now browse to the app at `http://localhost:5173/`
     │   ├── pages
     │   │   ├── HomePage.jsx
     │   │   ├── GridPage.jsx
-    │   │   ├── ChartPage;jsx
+    │   │   ├── ChartPage.jsx
     │   ├── styles
     │   │   ├── Navbar.css
     │   │   ├── SideBar.css

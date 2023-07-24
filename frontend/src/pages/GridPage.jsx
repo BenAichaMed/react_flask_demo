@@ -52,11 +52,7 @@ const LoadData = () => {
           response.data.map((row, index) => ({
             ...row,
             id: index,
-            Date: new Date(row.Date).toLocaleDateString("en-CA", {
-              year: "numeric",
-              month: "2-digit",
-              day: "2-digit",
-            }),
+            Date: new Date(row.Date).toISOString().split("T")[0],
           })),
         );
       } catch (error) {
@@ -83,11 +79,7 @@ const LoadData = () => {
           response.data.map((row, index) => ({
             ...row,
             id: index,
-            Date: new Date(row.Date).toLocaleDateString("en-CA", {
-              year: "numeric",
-              month: "2-digit",
-              day: "2-digit",
-            }),
+            Date: new Date(row.Date).toISOString().split("T")[0],
           })),
         );
       } catch (error) {
