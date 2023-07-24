@@ -1,0 +1,84 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.sidebar {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  background-color: #1f2937;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+  border-top: 0.1px solid wheat;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.sidebar.expanded {
+  width: 200px;
+}
+
+.sidebar-header img {
+  width: 35px;
+  height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.sidebar-header-title {
+  font-size: 1.5rem;
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+
+.sidebar-nav-item {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.sidebar-nav-item.active .icon {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 2px 2.5px 0 2.5px;
+}
+
+.sidebar-nav-item a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidebar-nav-item a:hover {
+  background-color: #4b5563;
+}
+
+.sidebar-nav-item a i {
+  font-size: 2.3rem;
+  margin: 3px 10px 0 10px;
+}
+
+.sidebar-nav-item a span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 0;
+  transition: max-width 0.3s ease-in-out;
+}
+
+.sidebar.expanded .sidebar-nav-item a span {
+  max-width: 150px;
+}
