@@ -1,6 +1,12 @@
 # react_flask_demo
 This repository holds an example of the integration of ReactJS and Flask in the backend
 
+![HomeImage](https://github.com/BenAichaMed/react_flask_demo/blob/main/frontend/src/assets/HomeImage.png).
+
+# Overview
+![Architecture](https://github.com/BenAichaMed/react_flask_demo/blob/main/frontend/src/assets/architecture.drawio.png).
+
+
 # Getting Started
 To get you started you can simply clone the react_flask_demo repository and install the dependencies:
 
